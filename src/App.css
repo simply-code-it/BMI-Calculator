@@ -1,38 +1,120 @@
-.App {
+*{
+  margin:0;
+  padding:0;
+  background-color: #0b0231c4;
+}
+
+.heading{
+  color:white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-head{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.input{
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-around;
+  align-items: center;
+  margin:0;
+  padding: 0;
+  width: 100%;
+}
+
+.inputItem{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin:0;
+  padding: 0;
+  width:70%;
+}
+.inputItem label{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputfield{
+background-color: antiquewhite;
+border-radius:8px;
+padding: 8px;
+width:70%;
+}
+.btn-bmi{
+  display: flex;
+  background-color: white;
+  color:black;
+  border-radius:8px;
+  border:none;
+  padding:10px;
+  width:20%;
+  margin-top:10px;
+  justify-content: space-around;
+}
+.graphHandler{
+  margin:0;
+  padding:0;
+  width:100%;
+  height: auto;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.chart-caption{
+  color:white;
+  text-align:center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardHandler{
+  margin:auto;
+  padding:20px;
+  width:80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  background-color: rgba(7, 7, 87, 0.699);
+}
+
+.card{
+  background-color: cadetblue;
+  display:flex;
+  flex-direction: column;
+}
+
+.card h1{
+  /* display: flex;
+  align-content: space-between;
+  text-align: center;
+  align-items: center; */
+  color:white;
+  display:flex;
+  flex-direction: row;
+}
+.card h1 span{
+  flex:3;
+  text-align:center;
+}
+.card h1 button {
+  flex:1;
+  color:red;
+  background-color: aliceblue;
+  border: none;
+ 
+}
+
+.card p{
+  color:white;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+.card p span{
+  flex:1;
+  text-align: center;
 }
